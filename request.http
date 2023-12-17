@@ -1,0 +1,29 @@
+### >>> GET Request to "Root Path"
+GET http://{{base_url}}
+
+### >>> GET Request to "All Customers Records"
+GET http://{{base_url}}/customers
+
+### >>> GET request for a "Specific Customer Record"
+GET http://{{base_url}}/customers/1
+
+### >>> POST request to "Create a New Customer Record"
+POST http://{{base_url}}/customers
+
+### >>> PUT Request to "Update Customer Record"
+PUT http://{{base_url}}/customers/1
+
+### >>> DELETE Request to "Destroy a Customer Record"
+DELETE http://{{base_url}}/customers/1
+
+### Petición POST hacia "http://localhost:8000/api/v1/customers"
+POST http://{{base_url}}/customers
+Content-Type: application/json
+
+{
+
+  "name": "Maximiliano Aravena Araya",
+  "email": "max@programadores.org",
+  "whatsapp": "+56961923035"
+
+}
